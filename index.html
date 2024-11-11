@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Editable Resume Builder</h1>
+
+        <!-- Form Section -->
+        <form id="resumeForm">
+            <h2>Fill in Your Details</h2>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="text" id="jobTitle" placeholder="Job Title" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <textarea id="education" placeholder="Education Details" required></textarea>
+            <textarea id="experience" placeholder="Experience Details" required></textarea>
+            <textarea id="skills" placeholder="Skills" required></textarea>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <!-- Editable Resume Display Section -->
+        <div id="resume" class="resume">
+            <header>
+                <h1 contenteditable="false" id="displayName">Your Name</h1>
+                <p contenteditable="false" id="displayJobTitle">Your Job Title</p>
+                <p contenteditable="false" id="displayLocation">Your Location</p>
+                <p contenteditable="false" id="displayEmail">Your Email</p>
+                <p contenteditable="false" id="displayPhone">Your Phone</p>
+            </header>
+            
+            <section>
+                <h2>Education</h2>
+                <p contenteditable="false" id="displayEducation">Your Education</p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <p contenteditable="false" id="displayExperience">Your Experience</p>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <p contenteditable="false" id="displaySkills">Your Skills</p>
+            </section>
+
+            <!-- Edit and Save Buttons -->
+            <button id="editButton" onclick="editResume()">Edit</button>
+            <button id="saveButton" onclick="saveResume()" style="display:none;">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

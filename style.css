@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #e3f2fd; /* Light Blue Background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 2.5em;
+    color: #0d47a1; /* Deep Blue */
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #42a5f5; /* Light Blue Border */
+    border-radius: 8px;
+    font-size: 1em;
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+/* Generate Button Styling */
+button[type="button"] {
+    background-color: #1e88e5; /* Bright Blue */
+    color: #ffffff;
+}
+
+button[type="button"]:hover {
+    background-color: #1565c0; /* Darker Blue */
+}
+
+/* Editable Resume Display Section */
+.resume {
+    background-color: #e3f2fd; /* Light Blue */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: left;
+}
+
+.resume header h1 {
+    font-size: 1.8em;
+    color: #0d47a1; /* Deep Blue */
+    font-weight: bold;
+}
+
+.resume p {
+    font-size: 1em;
+    color: #424242;
+}
+
+.resume section h2 {
+    color: #1e88e5; /* Bright Blue */
+    font-size: 1.2em;
+    border-bottom: 2px solid #1e88e5;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.resume section p {
+    font-size: 1em;
+    color: #424242;
+}
+
+/* Edit and Save Buttons */
+#editButton, #saveButton {
+    background-color: #ffca28; /* Bright Yellow */
+    color: #424242;
+    padding: 8px 16px;
+    margin: 15px 5px;
+}
+
+#editButton:hover, #saveButton:hover {
+    background-color: #f57f17; /* Darker Yellow */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.1em;
+    }
+
+    section p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    header h1 {
+        font-size: 1.3em;
+    }
+
+    section h2 {
+        font-size: 1em;
+    }
+
+    section p {
+        font-size: 0.85em;
+    }
+}
